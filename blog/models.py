@@ -11,12 +11,12 @@ class Post(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
 
-def publish(self):
-    self.published_date = timezone.now()
-    self.save()
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
-def _str_(self):
-    return self.title
+    def _str_(self):
+        return self.title
 
 
 # Create your models here.
